@@ -1,0 +1,44 @@
+
+
+.tm-yellow-btn {
+  display: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+#hospede .tm-yellow-btn{
+  display: block;
+}
+.reservar{
+  /*display: none;*/
+}
+#reserva .reservar{
+  display: block
+}
+/* Estilo padrão do botão de submit */
+.reservar {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo ao passar o mouse sobre o botão */
+.reservar:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo quando o botão está pressionado */
+.reservar:active {
+  background-color: #004080;
+}
+
+/* Estilo quando o botão está desabilitado */
+.reservar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
