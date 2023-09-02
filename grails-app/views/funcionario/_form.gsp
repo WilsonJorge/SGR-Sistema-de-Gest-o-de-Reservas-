@@ -87,7 +87,7 @@
             <div class="col-sm-9">
                 <select class="form-control" id="tipofuncionario"  name="tipoFuncionario">
                     <option>Administrador</option>
-                    <option>Normal User</option>
+                    <option> Funcionario</option>
                 </select>
             </div>
         </div>
