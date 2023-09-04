@@ -37,37 +37,24 @@
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
-            <li class="nav-item font-weight-semibold d-none d-lg-block">Help :+258 849465754</li>
+            <li class="nav-item font-weight-semibold d-none d-lg-block">Ajuda :+258 849465754</li>
             <li class="nav-item dropdown language-dropdown">
-              %{--<a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">--}%
                 <div class="d-inline-flex mr-0 mr-md-3">
-                  %{--<div class="flag-icon-holder">--}%
-                    %{--<i class="flag-icon flag-icon-us"></i>--}%
-                  %{--</div>--}%
+
                 </div>
 
               </a>
             </li>
           </ul>
-          %{--<form class="ml-auto search-form d-none d-md-block" action="#">--}%
-            %{--<div class="form-group">--}%
-              %{--<input type="search" class="form-control" placeholder="Search Here">--}%
-            %{--</div>--}%
-          %{--</form>--}%
 
           <g:form class="ml-auto search-form d-none d-md-block" controller="menu" action="pesquisar">
             <div class="form-group">
                 <input type="search" id="referenciaInput"  name="referenciaInput" class="form-control" placeholder="Search Here">
-                %{--<button id="searchButton" type="submit" class="btn btn-primary">Search</button>--}%
+
             </div>
            </g:form>
 
           <ul class="navbar-nav ml-auto">
-            %{--<li class="nav-item dropdown">--}%
-              %{--<a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">--}%
-                %{--<i class="mdi mdi-bell-outline"></i>--}%
-                %{--<span class="count">7</span>--}%
-              %{--</a>--}%
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link count-indicator" id="notificationDropdown" href="mailto:macuacuaw330@gmail.com">
@@ -97,7 +84,6 @@
       </nav>
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav" style="position: fixed;">
 
@@ -122,7 +108,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="${createLink(controller: 'quarto', action: 'index')}">Visualizar Quartos</a>
                             </li>
-
                 </ul>
               </div>
             </li>
@@ -159,7 +144,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="${createLink(controller: 'reserva', action: 'index')}">Visualizar Reservas</a>
                             </li>
-
                   </ul>
               </div>
             </li>
@@ -183,8 +167,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="${createLink(controller: 'report', action: 'hospede')}">Relatorio Hospedes</a>
                             </li>
-
-
                   </ul>
               </div>
             </li>
@@ -233,7 +215,6 @@
             <div class="row page-title-header">
               <div class="col-12">
                 <div class="page-header">
-                  %{--<h4 class="page-title">Dashboard</h4>--}%
 
                 </div>
               </div>
@@ -257,7 +238,7 @@
                           <div class="wrapper">
                             <h3 class="mb-0 font-weight-semibold">${totalHospedes}</h3>
                              <h5 class="mb-0 font-weight-medium text-primary">Hospedes</h5>
-                              %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                           </div>
                           <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-1"></canvas>
@@ -269,7 +250,7 @@
                           <div class="wrapper">
                            <h3 class="mb-0 font-weight-semibold">${totalfuncionarios}</h3>
                            <h5 class="mb-0 font-weight-medium text-primary">Funcionarios</h5>
-                           %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                           </div>
                           <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-2"></canvas>
@@ -281,7 +262,7 @@
                           <div class="wrapper">
                                 <h3 class="mb-0 font-weight-semibold">${totalreservas}</h3>
                                 <h5 class="mb-0 font-weight-medium text-primary">Reservas</h5>
-                                 %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                           </div>
                           <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-3"></canvas>
@@ -293,7 +274,7 @@
                           <div class="wrapper">
                             <h3 class="mb-0 font-weight-semibold">${totalValor}</h3>
                              <h5 class="mb-0 font-weight-medium text-primary">Facturamento</h5>
-                             %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                           </div>
                           <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-4"></canvas>
@@ -390,10 +371,10 @@
                           <h3 class="mb-0 font-weight-semibold"></h3>
                           <br>
                           <h5 class="mb-0 font-weight-medium text-primary"></h5>
-                          %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                         </div>
                        <canvas class="mt-4" height="120" id="chart"></canvas>
-                        %{--<div id="chart"></div>--}%
+
                       </div>
                     </div>
                   </div>
@@ -409,10 +390,10 @@
                           <h3 class="mb-0 font-weight-semibold"></h3>
                           <br>
                           <h5 class="mb-0 font-weight-medium text-primary"></h5>
-                          %{--<p class="mb-0 text-muted">+138.97(+0.54%)</p>--}%
+
                         </div>
                        <canvas class="mt-4" height="120" id="chartLine"></canvas>
-                        %{--<div id="chart"></div>--}%
+
                       </div>
                     </div>
                   </div>
