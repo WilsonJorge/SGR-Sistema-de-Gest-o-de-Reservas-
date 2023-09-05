@@ -26,26 +26,16 @@
     <asset:stylesheet src="/css_wizard/demo.css" rel="stylesheet"/>
 </head>
 <body>
-%{--<%--}%
-    %{--grails.plugin.springsecurity.SpringSecurityService springSecurityService--}%
-    %{--def user = springSecurityService.currentUser--}%
-
-    %{--// Recupere as informações do funcionário com base no usuário logado--}%
-    %{--def funcionario = Funcionario.findBySecUser(user)--}%
-    %{--if (funcionario) {--}%
-        %{--String username = user.username--}%
-        %{--String nome = funcionario.nomeFuncionario--}%
-    %{--}--}%
-%{--%>--}%
 <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
             %{--LOGO--}%
-            <a class="navbar-brand brand-logo" href="index.gsp">
-                %{--<asset:image src="" alt="logo" /> </a>--}%
+            <g:link class="navbar-brand brand-logo" controller="#" action="#">
+
                 <a class="navbar-brand brand-logo-mini" href="index.gsp">
-                    <asset:image src="l" alt="logo" /> </a>
+                    <asset:image src="l" alt="logo" />
+                </a>
+            </g:link>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
             <ul class="navbar-nav">
@@ -57,10 +47,9 @@
                                 <i class="#"></i>
                             </div>
                         </div>
-                        %{--<span class="profile-text font-weight-medium d-none d-md-block">Portugues</span>--}%
+
                     </a>
                     <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
-
 
                     </div>
                 </li>
@@ -75,7 +64,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link count-indicator" id="notificationDropdown" href="mailto:macuacuaw330@gmail.com">
                         <i class="mdi mdi-email-outline"></i>
-                        %{--<span class="count bg-success">3</span>--}%
+
                     </a>
                 </li>
                 <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
@@ -87,7 +76,6 @@
                             <p class="mb-1 mt-3 font-weight-semibold">Wilson Macuacua</p>
                             <p class="font-weight-light text-muted mb-0">macuacuaw@gmail.com</p>
                         </div>
-                        %{--<a class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>--}%
 
                         <a class="dropdown-item" href="${createLink(controller: 'logout', action: 'index')}">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
                     </div>
@@ -103,18 +91,6 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav" style="position: fixed;">
-                %{--<li class="nav-item nav-profile">--}%
-                    %{--<a href="#" class="nav-link">--}%
-                        %{--<div class="profile-image">--}%
-                            %{--<asset:image class="img-xs rounded-circle" src="face8.jpg" alt="profile image"/>--}%
-                            %{--<div class="dot-indicator bg-success"></div>--}%
-                        %{--</div>--}%
-                        %{--<div class="text-wrapper">--}%
-                            %{--<p class="profile-name">Wilson</p>--}%
-                            %{--<p class="designation">Admin</p>--}%
-                        %{--</div>--}%
-                    %{--</a>--}%
-                %{--</li>--}%
                 <li class="nav-item nav-category">Menu</li>
                 <li class="nav-item">
                     <a class="nav-link" href="${createLink(controller: 'menu', action: 'home')}">
@@ -244,7 +220,7 @@
         <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
-                <!-- Page Title Header Starts-->
+
                 <div>
                     <div>
                         <div>
@@ -305,27 +281,15 @@
                 </div>
 
             </div>
-            <!-- content-wrapper ends -->
-            <!-- partial:partials/_footer.html -->
 
-            <!-- partial -->
         </div>
         <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
-<!-- plugins:js -->
+
 <asset:javascript src="/assets/vendors/js/vendor.bundle.base.js"/>
-%{--<asset:javascript src="/assets/vendors/js/vendor.bundle.addons.js"/>--}%
-<!-- endinject -->
-<!-- Plugin js for this page-->
-<!-- End plugin js for this page-->
-<!-- inject:js -->
-%{--<asset:javascript  src="/assets/js/shared/off-canvas.js"/>--}%
-%{--<asset:javascript src="/assets/js/shared/misc.js"/>--}%
-<!-- endinject -->
-<!-- Custom js for this page-->
+
 <asset:javascript src="/assets/js/demo_1/dashboard.js"/>
 <!-- End custom js for this page-->
 
