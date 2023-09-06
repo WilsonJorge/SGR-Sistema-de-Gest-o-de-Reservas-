@@ -88,7 +88,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
+
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav" style="position: fixed;">
                 <li class="nav-item nav-category">Menu</li>
@@ -291,9 +291,5 @@
 <asset:javascript src="/assets/vendors/js/vendor.bundle.base.js"/>
 
 <asset:javascript src="/assets/js/demo_1/dashboard.js"/>
-<!-- End custom js for this page-->
-
-<!---WIZARD--->
-
 </body>
 </html>

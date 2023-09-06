@@ -44,7 +44,6 @@
 
 					<div class="card wizard-card" data-color="orange" id="wizardProfile">
 						<s2ui:form type='login' focus='username'>
-							<!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
 
 							<div class="wizard-header">
 								<h3>
@@ -67,7 +66,6 @@
 										<div class="col-sm-4 col-sm-offset-1">
 											<div class="picture-container">
 												<div class="picture">
-													%{--<img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>--}%
 													<asset:image src="default-avatar.png" class="picture-src" id="wizardPicturePreview" />
 													<input type="file" id="wizard-picture">
 												</div>
@@ -94,9 +92,7 @@
 										<button type="submit" class="btn btn-finish btn-fill btn-warning btn-wd btn-sm">Entrar</button>
 								</div>
 
-								%{--<div class="pull-left">--}%
-									%{--<input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Anterior' />--}%
-								%{--</div>--}%
+
 								<div class="clearfix"></div>
 							</div>
 						</s2ui:form>
