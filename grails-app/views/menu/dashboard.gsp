@@ -12,14 +12,7 @@
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
    <asset:stylesheet src="/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css"/>
     <asset:stylesheet src="/assets/vendors/iconfonts/ionicons/css/ionicons.css"/>
-    %{--<asset:stylesheet src="/assets/vendors/iconfonts/typicons/src/font/typicons.css"/>--}%
-    %{--<asset:stylesheet src="/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css"/>--}%
-    %{--<asset:stylesheet src="/assets/vendors/css/vendor.bundle.base.css"/>--}%
-    %{--<asset:stylesheet src="/assets/vendors/css/vendor.bundle.addons.css"/>--}%
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
+
     <asset:stylesheet src="/assets/css/shared/style.css"/>
     <!-- endinject -->
     <!-- Layout styles -->
