@@ -14,7 +14,6 @@ class Hospede {
     SecUser secUser
     static hasMany = [reservas:Reserva]
 
-
     static constraints = {
 
         nomeHospede nullable: true, blank: true

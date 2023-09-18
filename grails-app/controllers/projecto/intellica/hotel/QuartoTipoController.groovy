@@ -26,33 +26,6 @@ class QuartoTipoController {
         println("Chegouu")
     }
 
-
-//    def save(QuartoTipo quartoTipo, MultipartFile imageData) {
-//        println("IMAGEM:"+imageData)
-//
-//        if (quartoTipo == null || imageData == null || imageData.isEmpty()) {
-//            notFound()
-//            return
-//        }
-//
-//        quartoTipo.imageData = imageData.getBytes()
-//
-//        try {
-//            quartoTipoService.save(quartoTipo)
-//        } catch (ValidationException e) {
-//            respond quartoTipo.errors, view:'create'
-//            return
-//        }
-//
-//        request.withFormat {
-//            form multipartForm {
-//                flash.message = message(code: 'default.created.message', args: [message(code: 'quartoTipo.label', default: 'QuartoTipo'), quartoTipo.id])
-//                redirect quartoTipo
-//            }
-//            '*' { respond quartoTipo, [status: CREATED] }
-//        }
-//    }
-
     def save(QuartoTipo quartoTipo) {
         if (quartoTipo == null) {
             notFound()

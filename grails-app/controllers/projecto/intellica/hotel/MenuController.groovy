@@ -74,8 +74,6 @@ class MenuController {
             println("Ano: $ano, Quantidade: $quantidade")
         }
 
-
-
         def totalUsers = [(totalfuncionarios+totalHospedes)+1].first()
         println("TOTAL ADMIN:"+totalUserAdmin)
         println("TOTAL USER:"+totalUserNormal)

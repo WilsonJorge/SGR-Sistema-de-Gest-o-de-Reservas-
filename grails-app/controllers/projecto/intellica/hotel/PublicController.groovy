@@ -25,7 +25,6 @@ class  PublicController {
 
     def index() {
         println("DONE INDEX")
-        //redirect(url: '/public/home')
 
     }
 
@@ -63,10 +62,7 @@ class  PublicController {
                         "from Quarto q " +
                         "inner join q.quartoTipo qt")
 
-//        def resultadoPesquisa = Quarto.executeQuery(
-//                "select new map(q.id as id, q.estado as estado, q.numeroQuarto as numeroQuarto, qt.id as tipoId, qt.preco as preco, qt.tipoQuarto as tipoQuarto) " +
-//                        "from Quarto q " +
-//                        "inner join q.quartoTipo qt")
+
         def loggedIn = SpringSecurityUtils.ifAllGranted('ROLE_USER')
 
         render(view: 'home', model: [resultadoPesquisa: resultadoPesquisa,loggedIn:loggedIn])
@@ -114,13 +110,7 @@ class  PublicController {
         }
         render(view: 'mensagemConfirmacao')
 
-//        request.withFormat {
-//            form multipartForm {
-//                flash.message = message(code: 'default.created.message', args: [message(code: 'hospede.label', default: 'Hospede'), hospede.id])
-//                redirect hospede
-//            }
-//            '*' { respond hospede, [status: CREATED] }
-//        }
+
     }
 
     @Secured(['permitAll'])
@@ -163,9 +153,7 @@ class  PublicController {
         if (params.hospede?.id) {
             reserva.hospede = Hospede.get(params.hospede.id.toLong())
         }
-//        if (params.quartos?.id) {
-//            reserva.addToQuartos(Quarto.get(params.quartos.id.toLong()))
-//        }
+
             reserva.setDataEntrada(dataEntrada)
             reserva.setDataSaida(dataSaida)
 

@@ -16,9 +16,7 @@ class ReportController {
 
     def index() {
           render(view: 'report')
-//        redirect(url: '/report/report')
-//        params.max = Math.min(max ?: 10, 100)
-//        respond reportService.list(params), model:[reportCount: reportService.count()]
+
     }
     def receita(){
         render(view: 'reportReceitas')

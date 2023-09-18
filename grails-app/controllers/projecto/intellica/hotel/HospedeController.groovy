@@ -11,24 +11,23 @@ class HospedeController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-//    @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
 
         params.max = Math.min(max ?: 10, 100)
         respond hospedeService.list(params), model:[hospedeCount: hospedeService.count()]
     }
-//    @Secured(['ROLE_ADMIN'])
+
     def show(Long id) {
         respond(hospedeService.get(id))
 
     }
-//    @Secured(['ROLE_ADMIN'])
+
     def create() {
         respond new Hospede(params)
 
 
     }
-//    @Secured(['ROLE_ADMIN'])
+
     def save(Hospede hospede) {
         if (hospede == null) {
             notFound()
@@ -51,11 +50,11 @@ class HospedeController {
             '*' { respond hospede, [status: CREATED] }
         }
     }
-//    @Secured(['ROLE_ADMIN'])
+
     def edit(Long id) {
          respond hospedeService.get(id)
     }
-//    @Secured(['ROLE_ADMIN'])
+
     def update(Hospede hospede) {
         if (hospede == null) {
             notFound()
@@ -78,7 +77,7 @@ class HospedeController {
         }
     }
 
-//    @Secured(['ROLE_ADMIN'])
+
     def delete(Long id) {
         if (id == null) {
             notFound()
