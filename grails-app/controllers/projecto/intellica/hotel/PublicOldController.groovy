@@ -71,11 +71,6 @@ class PublicOldController {
         }
     }
 
-//    def createUser(Hospede hospede){
-//      def userDetails = new User(username:'ADMIN',password:'ADMIN',enabled:true).save()
-//
-//        println("User criado")
-//    }
     @Secured(['permitAll'])
     def createUser(Hospede hospede) {
         def secuser = new SecUser(username: 'Wilson', password: 'Wilson', enabled: true)

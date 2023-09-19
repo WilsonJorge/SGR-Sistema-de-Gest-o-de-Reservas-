@@ -3,7 +3,7 @@
     <div class="col-lg-12">
                 <div class="card">
                   <div class="card-body">
-                    %{--<h4 class="card-title">Horizontal Two column</h4>--}%
+
                     <form class="form-sample">
                       <p class="card-title">Informação pessoal </p>
                       <div class="row">

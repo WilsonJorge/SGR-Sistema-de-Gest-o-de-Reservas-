@@ -145,21 +145,6 @@ class ReportController {
 
         render(view: 'report', model: [reservations: reservations])
 
-//        // Construa a consulta HQL com base nos filtros
-//        def hql = """
-//                    FROM Reserva r
-//                    WHERE (:dataEntrada IS NULL OR r.dataEntrada >= :dataEntrada)
-//                    AND (:dataSaida IS NULL OR r.dataSaida <= :dataSaida)
-//                    AND (:roomNumber IS NULL OR (:roomNumber = '%' AND r.quartos IS NOT EMPTY) OR EXISTS (SELECT 1 FROM Quarto q WHERE q.numeroQuarto = :roomNumber AND q IN elements(r.quartos)))
-//                    AND (:clientName IS NULL OR (:clientName = '%' AND r.hospede IS NOT NULL) OR EXISTS (SELECT 1 FROM Hospede h WHERE lower(h.nomeHospede) LIKE :clientName AND h = r.hospede))
-//                    """
-//
-//        // Execute a consulta HQL
-//        def reservations = Reserva.executeQuery(hql, [dataEntrada: dataEntrada, dataSaida: dataSaida, roomNumber: roomNumber?.toInteger(), clientName: "%${clientName?.toLowerCase()}%"])
-//
-//        render(view: 'report', model: [reservations: reservations])
-
-
     }
 
     def generateReceita() {
@@ -213,9 +198,6 @@ class ReportController {
 
 
     }
-
-
-
 
 }
 
