@@ -107,9 +107,7 @@
 <fieldset class="form-group">
     <g:submitButton name="create" class="btn btn-primary submit-btn btn-block" value="Registar" />
 </fieldset>
-%{--<div class="form-group">--}%
-    %{--<button class="btn btn-primary submit-btn btn-block">Register</button>--}%
-%{--</div>--}%
+
 <div class="text-block text-center my-3">
     <span class="text-small font-weight-semibold">Já tem uma conta?</span>
     %{--<a href="login.html" class="text-black text-small">Login</a>--}%
